@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Me & Family Bootstrap Template</title>
+    <title>Camilla DePaola - Photos</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -37,10 +37,10 @@
 			<div class="navbar-collapse collapse">							
 				<div class="menu">
 					<ul class="nav nav-tabs" role="tablist">
-						<li role="presentation"  class="active"><a href="index.html">Home</a></li>
+						<li role="presentation"><a href="index.html">Home</a></li>
 						<li role="presentation"><a href="herstory.html">Her Story</a></li>
 						<li role="presentation"><a href="funeral.html">Funeral</a></li>
-						<li role="presentation"><a href="photos.html">Photos</a></li>
+						<li role="presentation" class="active"><a href="photos.html">Photos</a></li>
 						<!--<li role="presentation"><a href="contact.html">Contact</a></li>-->						
 					</ul>
 				</div>
@@ -784,6 +784,31 @@
 	
 		}	) 
 		.init();
+
+
+	$(document).ready(function(){ 
+
+     var $container = $('.isotopeWrapper');
+        var $resize = $('.isotopeWrapper').attr('id');
+        // initialize isotope
+        
+        $container.isotope({
+            itemSelector: '.isotopeItem',
+            resizable: false, // disable normal resizing
+            masonry: {
+                columnWidth: $container.width() / $resize
+            }
+        });
+
+        $(window).smartresize(function(){
+            $container.isotope({
+                // update columnWidth to a percentage of container width
+                masonry: {
+                    columnWidth: $container.width() / $resize
+                }
+            });
+        });
+	});
 	</script>
   </body>
 </html>
