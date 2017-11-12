@@ -48,19 +48,156 @@
 	
 	<div class="slider">
 			<style>
-.center {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	  	.center {
     margin: auto;
-    width: 25%;
+    width: 10%;
     padding: 10px;
 }
+.maincenter {
+	max-width:150px;
+}
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+	  	.center {
+    margin: auto;
+    width: 10%;
+    padding: 10px;
+}
+.maincenter {
+	max-width:150px;
+}
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+	  	.center {
+    margin: auto;
+    width: 20%;
+    padding: 10px;
+}
+.maindiv {
+	padding-left:50px;
+	padding-right:50px;
+}
+.maincenter {
+	max-width:200px;
+}
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	  	.center {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
+.maindiv {
+	padding-left:50px;
+	padding-right:50px;
+}
+.maincenter {
+	max-width:250px;
+}
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	  	.center {
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+}
+.maindiv {
+	padding-left:50px;
+	padding-right:50px;
+}
+.maincenter {
+	max-width:250px;
+}
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	  	.center {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
+.maindiv {
+	padding-left:50px;
+	padding-right:50px;
+}
+.maincenter {
+	max-width:300px;
+}
+/* Styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+	  	.center {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
+.maindiv {
+	padding-left:50px;
+	padding-right:50px;
+}
+.maincenter {
+	max-width:300px;
+}
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+	  	.center {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
+.maindiv {
+	padding-left:150px;
+	padding-right:150px;
+}
+.maincenter {
+	max-width:300px;
+}
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+	  	.center {
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+}
+.maindiv {
+	padding-left:150px;
+	padding-right:150px;
+}
+.maincenter {
+	max-width:350px;
+}
+/* Styles */
+}
 			</style>		
-			<div class="center"><img src="img/9.jpg" style="max-width:350px;" alt=""/></div>
+			<div class="center"><img class="maincenter" src="img/9.jpg"  alt=""/></div>
 				
     </div>
 	
 	<div class="jumbotron">
 		<h1>Camilla DePaola</h1>
-		<p style="padding-left:150px;padding-right:150px;">
+		<p class="maindiv">
 		Camilla DePaola celebrated 106 years of a joyous life. Her loving spirit has been inspirational to all who have been fortunate to know her. She was grateful for every moment that she could be in the company of others. All were welcome to share in her laughter, her wit, her wisdom.  Through her humanity Camilla taught us that life is about loving and caring for each other. She will be sadly missed.  
 		</p>
 	</div>
